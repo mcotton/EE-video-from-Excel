@@ -1,0 +1,18 @@
+<!doctype html>
+<h1>Video Events</h1>
+
+{% for esn in template_values %}
+    {% for item in template_values[esn] %}
+        <li>
+            <video width="640" height="360"  controls preload="none">
+                <source src="http://c000.eagleeyenetworks.com/asset/play/video.mp4?id={{ esn }}&start_timestamp={{ item['start_timestamp'] }}&end_timestamp={{ item['end_timestamp'] }}" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <a href="http://c000.eagleeyenetworks.com/asset/play/video.mp4?id={{ esn }}&start_timestamp={{ item['start_timestamp'] }}&end_timestamp={{ item['end_timestamp'] }}">
+                pre-fetch video
+                <a href="https://c000.eagleeyenetworks.com/hist/index.html?id={{ esn }}&ts={{ item['start_timestamp'] }}" target="_blank">view in history browser</a> 
+            </a>
+        </li>
+    {% endfor %}
+{% endfor %}
+
