@@ -1,9 +1,21 @@
 # EE-video-from-CSV
 Sample application to pull in a list of videos from matching timestamps in a CSV
 
+### How to Install ###
 
-### Quick Notes ###
+1: `do stuff`
 
- - 1: Add your credentials to `example_settings.py` and save as `settings.py`
- - 2: Run `docker-compose up --build`
- - 3: Run `docker-compose run eagleeye` to actually use it  
+2: `create an 'uploads' directory`
+
+### How to Run ###
+
+1: `export FLASK_APP=hello.py`
+
+2: `export FLASK_ENV=development`
+
+3: `flask run`
+
+
+### Format for Excel file ###
+
+1: `example.xlsx`
