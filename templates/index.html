@@ -12,3 +12,19 @@
     </form>
 </p>
 
+<br>
+<hr>
+<br>
+
+<h3>Generate an Excel sheet</h3>
+
+<p>In order to get this process started, I've made an easy way to create a spreadsheet to use in the above example.</p>
+
+<p>
+    <form action="/generate" method="post" enctype="multipart/form-data">
+        <input type="text" name="esn" placeholder="ESN">
+        <input type="text" name="start_time" placeholder="start time">
+        <input type="text" name="end_time" placeholder="end time">
+        <input type="submit" name="generate">
+    </form>
+</p>

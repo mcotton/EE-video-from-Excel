@@ -7,6 +7,13 @@ Sample application to pull in a list of videos from matching timestamps in a CSV
 
 2: `create an 'uploads' directory`
 
+3: make a file name `settings.py` that contains
+
+```
+username = '<username>'
+password = '<password>'
+```
+
 ### How to Run ###
 
 1: `export FLASK_APP=hello.py`
